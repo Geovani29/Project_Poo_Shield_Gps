@@ -1,6 +1,6 @@
 import osmnx as ox
 import networkx as nx
-
+from map import map
 
 class route:
     
@@ -36,5 +36,5 @@ class route:
                                   weight=optimizer)
 
         shortest_route_map = ox.plot_route_folium(graph, shortest_route)
-        shortest_route_map.save("p.html")
+        m = shortest_route_map.save("p.html")
         
