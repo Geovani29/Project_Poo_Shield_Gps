@@ -1,8 +1,8 @@
 import folium
 
-m = folium.Map(location=[42.3601, -71.8589], zoom_start=12)
-tooltip = 'Click for more ingo'
-folium.Marker([10.271681232946728, -74.90753173828125], 
+m = folium.Map(location=[10.916583786068093, -74.77432250976562, zoom_start=12)
+tooltip = 'soledad'
+folium.Marker([10.916583786068093, -74.77432250976562], 
               popup='<strong>Location One</strong>',
               tooltip = tooltip).add_to(m)
 
