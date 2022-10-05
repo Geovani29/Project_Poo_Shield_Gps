@@ -1,5 +1,7 @@
-def choose_A(self):
-    pass
+class user:
 
-def choose_B(self):
-    pass
+    def choose_A(self):
+        pass
+
+    def choose_B(self):
+        pass

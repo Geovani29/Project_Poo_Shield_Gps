@@ -1,5 +1,7 @@
-def c_danger_zones (self):
-    pass
+class route:
 
-def generate_route(self):
-    pass
+    def c_danger_zones (self):
+        pass
+
+    def generate_route(self):
+        pass
