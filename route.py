@@ -10,23 +10,23 @@ class route:
     def generate_route(self):
         
         ox.config(log_console=True, use_cache=True)
-        # define the start and end locations in latlng
-        start_latlng = (37.78497,-122.43327)
-        end_latlng = (37.78071,-122.41445)
-        # location where you want to find your route
+        # definir las ubicaciones de inicio y finalización en latlng
+        start_latlng = (10.271681232946728, -74.90753173828125)
+        end_latlng = (10.371660215460267, -75.0311279296875)
+        # ubicación donde desea encontrar su ruta
         place     = 'San Francisco, California, United States'
-        # find shortest route based on the mode of travel
+        # encontrar la ruta más corta según el modo de viaje
         mode      = 'walk'        # 'drive', 'bike', 'walk'
-        # find shortest path based on distance or time
+        # encontrar el camino más corto basado en la distancia o el tiempo
         optimizer = 'time'        # 'length','time'
-        # create graph from OSM within the boundaries of some 
+        # crear gráficos desde OSM dentro de los límites de algunos
         # geocodable place(s)
         graph = ox.graph_from_place(place, network_type = mode)
-        # find the nearest node to the start location
+        # encontrar el nodo más cercano a la ubicación de inicio
         orig_node = ox.get_nearest_node(graph, start_latlng)
-        # find the nearest node to the end location
+        # encontrar el nodo más cercano a la ubicación final
         dest_node = ox.get_nearest_node(graph, end_latlng)
-        #  find the shortest path
+        #  encontrar el camino más corto
         shortest_route = nx.shortest_path(graph,
                                   orig_node,
                                   dest_node,
@@ -34,4 +34,4 @@ class route:
 
         shortest_route_map = ox.plot_route_folium(graph, shortest_route)
         
-        pass
+        
