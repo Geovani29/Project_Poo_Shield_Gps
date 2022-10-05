@@ -1,11 +1,8 @@
 import osmnx as ox
 import networkx as nx
-from map import map
+
 
 class route:
-    
-    def __init__(self):
-        pass
 
     def c_danger_zones (self):
         pass
@@ -14,8 +11,8 @@ class route:
         
         ox.config(log_console=True, use_cache=True)
         # define the start and end locations in latlng
-        start_latlng = (10.271681232946728, -74.90753173828125)
-        end_latlng = (10.371660215460267, -75.0311279296875)
+        start_latlng = (37.78497,-122.43327)
+        end_latlng = (37.78071,-122.41445)
         # location where you want to find your route
         place     = 'San Francisco, California, United States'
         # find shortest route based on the mode of travel
@@ -36,5 +33,5 @@ class route:
                                   weight=optimizer)
 
         shortest_route_map = ox.plot_route_folium(graph, shortest_route)
-        m = shortest_route_map.save("p.html")
         
+        pass

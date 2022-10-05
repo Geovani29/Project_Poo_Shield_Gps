@@ -1,4 +1,5 @@
+from map import map
 
-##
-print("la vida")
-##
+map = map
+
+map.draw_map("la vida")
