@@ -33,5 +33,5 @@ class route:
                                   weight=optimizer)
 
         shortest_route_map = ox.plot_route_folium(graph, shortest_route)
-        shortest_route_map = "map.html"
+        shortest_route_map.save("map.html")
         
