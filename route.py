@@ -3,6 +3,9 @@ import networkx as nx
 
 
 class route:
+    
+    def __init__(self):
+        pass
 
     def c_danger_zones (self):
         pass
@@ -33,5 +36,5 @@ class route:
                                   weight=optimizer)
 
         shortest_route_map = ox.plot_route_folium(graph, shortest_route)
-        shortest_route_map.save("map.html")
+        shortest_route_map.save("p.html")
         

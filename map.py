@@ -1,6 +1,9 @@
 import folium 
 class map:
     
+    def __init__(self):
+        pass
+    
     def draw_map(self):
         
         m = folium.Map(location=[10.916583786068093, -74.77432250976562], zoom_start=12)
