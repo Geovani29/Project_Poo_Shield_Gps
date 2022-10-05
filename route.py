@@ -33,8 +33,5 @@ class route:
                                   weight=optimizer)
 
         shortest_route_map = ox.plot_route_folium(graph, shortest_route)
-        
-        shortest_route_map = [10.271681232946728, -74.90753173828125, 10.371660215460267, -75.0311279296875]
-        
-        
+        shortest_route_map
         
