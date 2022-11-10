@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8b12bdfc13c28207f8f4d8627ed8067f {
+                #map_b2d1a0451d731d79baab1662cdf25d7e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_8b12bdfc13c28207f8f4d8627ed8067f" ></div>
+            <div class="folium-map" id="map_b2d1a0451d731d79baab1662cdf25d7e" ></div>
         
 </body>
 <script>    
     
-            var map_8b12bdfc13c28207f8f4d8627ed8067f = L.map(
-                "map_8b12bdfc13c28207f8f4d8627ed8067f",
+            var map_b2d1a0451d731d79baab1662cdf25d7e = L.map(
+                "map_b2d1a0451d731d79baab1662cdf25d7e",
                 {
-                    center: [10.916583786068093, -74.77432250976562],
+                    center: [11.017804821105223, -74.85095858573912],
                     crs: L.CRS.EPSG3857,
                     zoom: 12,
                     zoomControl: true,
@@ -55,34 +55,61 @@
 
         
     
-            var tile_layer_3115fc3d407c1d130a37b247f2919f51 = L.tileLayer(
+            var tile_layer_6553c40428e7ac260e11908ff3753ddd = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_8b12bdfc13c28207f8f4d8627ed8067f);
+            ).addTo(map_b2d1a0451d731d79baab1662cdf25d7e);
         
     
-            var marker_b12dd4f29ab579783368b6407309c533 = L.marker(
-                [10.916583786068093, -74.77432250976562],
+            var marker_acba6da61d854fcd2c1fa28a79862f8e = L.marker(
+                [11.017804821105223, -74.85095858573912],
                 {}
-            ).addTo(map_8b12bdfc13c28207f8f4d8627ed8067f);
+            ).addTo(map_b2d1a0451d731d79baab1662cdf25d7e);
         
     
-        var popup_470b75ed94cc646768ef81768b8a4d36 = L.popup({"maxWidth": "100%"});
+        var popup_121d53737105a27193a7c35d20fcbe33 = L.popup({"maxWidth": "100%"});
 
         
-            var html_802b37b71d5287e3f1d3765369758d7c = $(`<div id="html_802b37b71d5287e3f1d3765369758d7c" style="width: 100.0%; height: 100.0%;"><strong>Location One</strong></div>`)[0];
-            popup_470b75ed94cc646768ef81768b8a4d36.setContent(html_802b37b71d5287e3f1d3765369758d7c);
+            var html_8d23004db86a167d4be04e4d64a017dd = $(`<div id="html_8d23004db86a167d4be04e4d64a017dd" style="width: 100.0%; height: 100.0%;"><strong>Location One</strong></div>`)[0];
+            popup_121d53737105a27193a7c35d20fcbe33.setContent(html_8d23004db86a167d4be04e4d64a017dd);
         
 
-        marker_b12dd4f29ab579783368b6407309c533.bindPopup(popup_470b75ed94cc646768ef81768b8a4d36)
+        marker_acba6da61d854fcd2c1fa28a79862f8e.bindPopup(popup_121d53737105a27193a7c35d20fcbe33)
         ;
 
         
     
     
-            marker_b12dd4f29ab579783368b6407309c533.bindTooltip(
+            marker_acba6da61d854fcd2c1fa28a79862f8e.bindTooltip(
                 `<div>
-                     soledad
+                     universidad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac1ba9d948f2183a52e2d3b55a56b61a = L.marker(
+                [10.9089565752303, -74.7934627532959],
+                {}
+            ).addTo(map_b2d1a0451d731d79baab1662cdf25d7e);
+        
+    
+        var popup_3b607d6c13fac687635764abfbf09698 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28649fd68e0b7c2ba37a6809d1749407 = $(`<div id="html_28649fd68e0b7c2ba37a6809d1749407" style="width: 100.0%; height: 100.0%;"><strong>Location One</strong></div>`)[0];
+            popup_3b607d6c13fac687635764abfbf09698.setContent(html_28649fd68e0b7c2ba37a6809d1749407);
+        
+
+        marker_ac1ba9d948f2183a52e2d3b55a56b61a.bindPopup(popup_3b607d6c13fac687635764abfbf09698)
+        ;
+
+        
+    
+    
+            marker_ac1ba9d948f2183a52e2d3b55a56b61a.bindTooltip(
+                `<div>
+                     casa
                  </div>`,
                 {"sticky": true}
             );
