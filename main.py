@@ -1,21 +1,26 @@
 from clases import *
-
+from user import User
 api_url = "http://www.mapquestapi.com/directions/v2/route?"
 key = "TPAGE37FU5xR5kvC7LPAeN3snKSUlv0B"
 
 api = API(api_url, key)
 ruta = Ruta
-
+user = User()
 while True:
     
     pedido = Direction
-        
-    pedido.inicio = input("Ingresa el origen: ")
+
+    user.ask_name()
+    
+    
+    user.presentation()
+
+    pedido.inicio = user.ask_origen()
 
     if pedido.inicio == 'q':
         break
     
-    pedido.final = input("Ingresa el destino: ")
+    pedido.final = user.ask_destino()
     
     if pedido.final == 'q':
         break    
