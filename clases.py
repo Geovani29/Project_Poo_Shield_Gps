@@ -51,4 +51,5 @@ class Ruta(API, Direction):
                 distance_remaining = distance - each["distance"] * 1.61            
                 print(each["narrative"] + " (" + str("{:.2f}".format(distance_remaining)) + " Km faltantes)")
                 distance = distance_remaining
+            
    
