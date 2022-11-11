@@ -8,7 +8,7 @@ ruta = Ruta
 
 while True:
     
-    pedido = direction
+    pedido = Direction
         
     pedido.inicio = input("Ingresa el origen: ")
 
