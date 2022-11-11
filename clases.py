@@ -30,4 +30,25 @@ class API(Direction):
             self.check = 1
  
 
+class Ruta(API, Direction):
+    def __init__(self):
+        pass
     
+    def print(pedido , api):
+         if api.check == False:
+            trip_duration = api.json_data["route"]["formattedTime"]
+            distance = api.json_data["route"]["distance"] * 1.61
+            #fuel_used = api.json_data["route"]["fuelUsed"] * 3.79
+            print("=================================================")
+            print(f"Información del viaje desde {pedido.inicio.capitalize()} hasta {pedido.final.capitalize()}.")
+            print(f"Duración del viaje: {trip_duration}.")
+            print("Distancia: " + str("{:.2f}".format(distance) + " Km"))
+            #print("Combustible usado: " + str("{:.2f}".format(fuel_used) + " L"))
+            print("=================================================")
+            print("Indicaciones del viaje")
+
+            for each in api.json_data["route"]["legs"][0]["maneuvers"]:
+                distance_remaining = distance - each["distance"] * 1.61            
+                print(each["narrative"] + " (" + str("{:.2f}".format(distance_remaining)) + " Km faltantes)")
+                distance = distance_remaining
+   
