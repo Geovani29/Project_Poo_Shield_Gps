@@ -32,8 +32,8 @@ class API(Direction):
 
 class Ruta(API, Direction):
     def __init__(self):
-        pass
-    
+        pass     
+
     def print(pedido , api):
          if api.check == False:
             trip_duration = api.json_data["route"]["formattedTime"]
