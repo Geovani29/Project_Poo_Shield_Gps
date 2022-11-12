@@ -1,5 +1,5 @@
 import urllib
-
+import folium
 import requests
 
 class Direction():
@@ -46,10 +46,19 @@ class Ruta(API, Direction):
             #print("Combustible usado: " + str("{:.2f}".format(fuel_used) + " L"))
             print("=================================================")
             print("Indicaciones del viaje")
-
+            lista = []
             for each in api.json_data["route"]["legs"][0]["maneuvers"]:
                 distance_remaining = distance - each["distance"] * 1.61            
                 print(each["narrative"] + " (" + str("{:.2f}".format(distance_remaining)) + " Km faltantes)")
                 distance = distance_remaining
+                print("lng lat#",each["startPoint"])
+                lista.append([each["narrative"], each["startPoint"]["lng"], each["startPoint"]["lat"]])
+            with open("archivo.txt", "w") as f:
+                f.write(str(lista)) 
+            
+            m = folium.Map(location=[10.963889,-74.796387], zoom_start= 13)
+            for row in lista:
+                folium.Marker([row[2], row[1]], popup=row[0]).add_to(m)
+            m.save("try.html")
             
    

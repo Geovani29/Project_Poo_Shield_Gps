@@ -8,11 +8,16 @@ class User:
         pass
 
     def ask_name(self):
+        print("=================================================")
         self.name = input("¿cual es su nombre? Querido usuario: ")
+        print("=================================================")
         
 
     def presentation(self):
+        print("===============================================================================")
         print("Hola "+ self.name +" yo soy SHIELD_GPS tu GPS de confianza ¿A donde quieres ir?")
+        print("===============================================================================")
+        
         return 
 
     def ask_origen(self):

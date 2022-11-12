@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66573ac3605483a3fd24850c1d660710 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_66573ac3605483a3fd24850c1d660710" ></div>
+        
+</body>
+<script>    
+    
+            var map_66573ac3605483a3fd24850c1d660710 = L.map(
+                "map_66573ac3605483a3fd24850c1d660710",
+                {
+                    center: [10.963889, -74.796387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_232d8df19c768693cd6b9843eba75352 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+            var marker_6462354cd2b3a816e8c0df945b035e4e = L.marker(
+                [9.299447, -75.394655],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_551a96c78b367a87a0499cc11e697dae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97e11a6febb98d5e12462730ca5de310 = $(`<div id="html_97e11a6febb98d5e12462730ca5de310" style="width: 100.0%; height: 100.0%;">Head toward Calle 25A on Calle 25. Go for 236 ft.</div>`)[0];
+            popup_551a96c78b367a87a0499cc11e697dae.setContent(html_97e11a6febb98d5e12462730ca5de310);
+        
+
+        marker_6462354cd2b3a816e8c0df945b035e4e.bindPopup(popup_551a96c78b367a87a0499cc11e697dae)
+        ;
+
+        
+    
+    
+            var marker_b44223bd0375cd4f3b4a8957c5f781cd = L.marker(
+                [9.29911, -75.39522],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_e57e9563deca915c98573d8f0ae6da73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2d015cce067d1e779e2655c58e0eb34 = $(`<div id="html_a2d015cce067d1e779e2655c58e0eb34" style="width: 100.0%; height: 100.0%;">Turn right onto Carrera 18. Go for 0.1 mi.</div>`)[0];
+            popup_e57e9563deca915c98573d8f0ae6da73.setContent(html_a2d015cce067d1e779e2655c58e0eb34);
+        
+
+        marker_b44223bd0375cd4f3b4a8957c5f781cd.bindPopup(popup_e57e9563deca915c98573d8f0ae6da73)
+        ;
+
+        
+    
+    
+            var marker_bdc15d11269f14bd6da109e889602d10 = L.marker(
+                [9.30094, -75.39549],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_9ab20ac1e3f9b226cb6df4d208f2d6ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb865b4bcfa0f7180f3611ef600c5be2 = $(`<div id="html_eb865b4bcfa0f7180f3611ef600c5be2" style="width: 100.0%; height: 100.0%;">Turn right onto Calle 23. Go for 0.5 mi.</div>`)[0];
+            popup_9ab20ac1e3f9b226cb6df4d208f2d6ce.setContent(html_eb865b4bcfa0f7180f3611ef600c5be2);
+        
+
+        marker_bdc15d11269f14bd6da109e889602d10.bindPopup(popup_9ab20ac1e3f9b226cb6df4d208f2d6ce)
+        ;
+
+        
+    
+    
+            var marker_aecec1ea0943b14ee00307eefe2d6a39 = L.marker(
+                [9.302909999999999, -75.38895999999997],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_e97b5d8d7896761118d973570592f44a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9bc80ab43742a418c4cd3dc365a3266 = $(`<div id="html_a9bc80ab43742a418c4cd3dc365a3266" style="width: 100.0%; height: 100.0%;">Turn right onto Penitas 23 O. Go for 397 ft.</div>`)[0];
+            popup_e97b5d8d7896761118d973570592f44a.setContent(html_a9bc80ab43742a418c4cd3dc365a3266);
+        
+
+        marker_aecec1ea0943b14ee00307eefe2d6a39.bindPopup(popup_e97b5d8d7896761118d973570592f44a)
+        ;
+
+        
+    
+    
+            var marker_5fc9fb2cd761aef3848950c86b6e4ce2 = L.marker(
+                [9.30215, -75.38815999999997],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_b20b1f9685d8e8b2dc0a8db694ded5e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d312fe1ccd273fb68648400122824c5 = $(`<div id="html_8d312fe1ccd273fb68648400122824c5" style="width: 100.0%; height: 100.0%;">Keep left onto Calle 25. Go for 0.3 mi.</div>`)[0];
+            popup_b20b1f9685d8e8b2dc0a8db694ded5e6.setContent(html_8d312fe1ccd273fb68648400122824c5);
+        
+
+        marker_5fc9fb2cd761aef3848950c86b6e4ce2.bindPopup(popup_b20b1f9685d8e8b2dc0a8db694ded5e6)
+        ;
+
+        
+    
+    
+            var marker_754233e87b696821b0a5ac9b2fc7847f = L.marker(
+                [9.302879999999996, -75.38417999999996],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_93803469e38bd5d0796f476b02ce4b7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0228cd93215bcf12c85aea17b745bb4 = $(`<div id="html_c0228cd93215bcf12c85aea17b745bb4" style="width: 100.0%; height: 100.0%;">Continue on Calle 32. Go for 0.3 mi.</div>`)[0];
+            popup_93803469e38bd5d0796f476b02ce4b7a.setContent(html_c0228cd93215bcf12c85aea17b745bb4);
+        
+
+        marker_754233e87b696821b0a5ac9b2fc7847f.bindPopup(popup_93803469e38bd5d0796f476b02ce4b7a)
+        ;
+
+        
+    
+    
+            var marker_ba347f0bab37c59007210dc55fe2045d = L.marker(
+                [9.303219999999996, -75.37926999999996],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_5ca4a96c3c1418d0d3e67f052ffe2369 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dc7d54e9579a0b97448b730e1b52ef6 = $(`<div id="html_5dc7d54e9579a0b97448b730e1b52ef6" style="width: 100.0%; height: 100.0%;">Keep right onto Calle 32A. Go for 0.5 mi.</div>`)[0];
+            popup_5ca4a96c3c1418d0d3e67f052ffe2369.setContent(html_5dc7d54e9579a0b97448b730e1b52ef6);
+        
+
+        marker_ba347f0bab37c59007210dc55fe2045d.bindPopup(popup_5ca4a96c3c1418d0d3e67f052ffe2369)
+        ;
+
+        
+    
+    
+            var marker_5b6640aca58c671fb3ebf46124a90d60 = L.marker(
+                [9.303099999999995, -75.37281999999993],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_5191fc352257146cb71c2811a058db50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83eb3b7434eb758ab70487c9c3f8f1a6 = $(`<div id="html_83eb3b7434eb758ab70487c9c3f8f1a6" style="width: 100.0%; height: 100.0%;">Turn left onto Avenida Troncal de Occidente (25). Go for 2.2 mi.</div>`)[0];
+            popup_5191fc352257146cb71c2811a058db50.setContent(html_83eb3b7434eb758ab70487c9c3f8f1a6);
+        
+
+        marker_5b6640aca58c671fb3ebf46124a90d60.bindPopup(popup_5191fc352257146cb71c2811a058db50)
+        ;
+
+        
+    
+    
+            var marker_659499fbcf366b159ec4f1bd6bcd5984 = L.marker(
+                [9.311309999999985, -75.34589999999987],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_9e35d6c7dbc3cfafdf482874231472b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_050d53de491443c578dab6ad65ec0663 = $(`<div id="html_050d53de491443c578dab6ad65ec0663" style="width: 100.0%; height: 100.0%;">Keep left onto 25 toward Barranquilla. Go for 13.9 mi.</div>`)[0];
+            popup_9e35d6c7dbc3cfafdf482874231472b2.setContent(html_050d53de491443c578dab6ad65ec0663);
+        
+
+        marker_659499fbcf366b159ec4f1bd6bcd5984.bindPopup(popup_9e35d6c7dbc3cfafdf482874231472b2)
+        ;
+
+        
+    
+    
+            var marker_8a1cc7fbadf4ab0f441fd1f22774b8f3 = L.marker(
+                [9.432619999999995, -75.23192999999969],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_cea6236b0b82a4ae589d807e55317c7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2398b5c84ab837b2f1c20f0d8ee085cf = $(`<div id="html_2398b5c84ab837b2f1c20f0d8ee085cf" style="width: 100.0%; height: 100.0%;">Take the 2nd exit from roundabout onto 25. Go for 23.8 mi.</div>`)[0];
+            popup_cea6236b0b82a4ae589d807e55317c7f.setContent(html_2398b5c84ab837b2f1c20f0d8ee085cf);
+        
+
+        marker_8a1cc7fbadf4ab0f441fd1f22774b8f3.bindPopup(popup_cea6236b0b82a4ae589d807e55317c7f)
+        ;
+
+        
+    
+    
+            var marker_bd10fefdfb721fa8a727dbe528a10d20 = L.marker(
+                [9.698770000000016, -75.11460999999966],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_8f53ac413921aa9b690ab38a30cbea64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_323c3b144f3e32771b2207353d7673ff = $(`<div id="html_323c3b144f3e32771b2207353d7673ff" style="width: 100.0%; height: 100.0%;">Pass 2 roundabouts and continue on 25. Go for 28.6 mi.</div>`)[0];
+            popup_8f53ac413921aa9b690ab38a30cbea64.setContent(html_323c3b144f3e32771b2207353d7673ff);
+        
+
+        marker_bd10fefdfb721fa8a727dbe528a10d20.bindPopup(popup_8f53ac413921aa9b690ab38a30cbea64)
+        ;
+
+        
+    
+    
+            var marker_67bb47e7dce3cdd91f860d5f543652cb = L.marker(
+                [10.06879, -75.0760399999998],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_cf9ed4931ea47d801c1f0116e0fae390 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ed3d97437c857aa49db31134de1e858 = $(`<div id="html_2ed3d97437c857aa49db31134de1e858" style="width: 100.0%; height: 100.0%;">Continue toward Barranquilla. Go for 112 ft.</div>`)[0];
+            popup_cf9ed4931ea47d801c1f0116e0fae390.setContent(html_2ed3d97437c857aa49db31134de1e858);
+        
+
+        marker_67bb47e7dce3cdd91f860d5f543652cb.bindPopup(popup_cf9ed4931ea47d801c1f0116e0fae390)
+        ;
+
+        
+    
+    
+            var marker_2dceca73f41bd9c5812aebc91596e065 = L.marker(
+                [10.06907, -75.0759199999998],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_41d645f84358a677c1dd1cce5e722b32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb5eb06f9c18d79c09c5aad3f442cc2b = $(`<div id="html_cb5eb06f9c18d79c09c5aad3f442cc2b" style="width: 100.0%; height: 100.0%;">Take the 1st exit from roundabout onto 25 toward Barranquilla. Go for 54.1 mi.</div>`)[0];
+            popup_41d645f84358a677c1dd1cce5e722b32.setContent(html_cb5eb06f9c18d79c09c5aad3f442cc2b);
+        
+
+        marker_2dceca73f41bd9c5812aebc91596e065.bindPopup(popup_41d645f84358a677c1dd1cce5e722b32)
+        ;
+
+        
+    
+    
+            var marker_d40a43bde55593e1aed4b5d7532b7c14 = L.marker(
+                [10.72345999999998, -74.75240999999949],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_0a11449be8842d9265ae9a562c13185b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_834e12c9bbd59ab755ec5f0c8ac445ce = $(`<div id="html_834e12c9bbd59ab755ec5f0c8ac445ce" style="width: 100.0%; height: 100.0%;">Make a U-Turn onto 25. Go for 322 ft.</div>`)[0];
+            popup_0a11449be8842d9265ae9a562c13185b.setContent(html_834e12c9bbd59ab755ec5f0c8ac445ce);
+        
+
+        marker_d40a43bde55593e1aed4b5d7532b7c14.bindPopup(popup_0a11449be8842d9265ae9a562c13185b)
+        ;
+
+        
+    
+    
+            var marker_97759d0441de09b7c9a03445a1ef8cd4 = L.marker(
+                [10.723369999999981, -74.75303999999947],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_3723614f90ba7b780f44a87f08307b66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e95d74d397668b5fd6a9dcff67fe0d5d = $(`<div id="html_e95d74d397668b5fd6a9dcff67fe0d5d" style="width: 100.0%; height: 100.0%;">Turn right onto 25 toward Barranquilla. Go for 0.7 mi.</div>`)[0];
+            popup_3723614f90ba7b780f44a87f08307b66.setContent(html_e95d74d397668b5fd6a9dcff67fe0d5d);
+        
+
+        marker_97759d0441de09b7c9a03445a1ef8cd4.bindPopup(popup_3723614f90ba7b780f44a87f08307b66)
+        ;
+
+        
+    
+    
+            var marker_ec04d45641b4732c10266122a1cdf24e = L.marker(
+                [10.723019999999979, -74.76370999999948],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_2a6168cfc54b9e48621599b27402f9e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8112c16c92af013e2e4f3181bf6eb632 = $(`<div id="html_8112c16c92af013e2e4f3181bf6eb632" style="width: 100.0%; height: 100.0%;">Pass 4 roundabouts and continue on Variante Palmar de Varela. Go for 5.8 mi.</div>`)[0];
+            popup_2a6168cfc54b9e48621599b27402f9e5.setContent(html_8112c16c92af013e2e4f3181bf6eb632);
+        
+
+        marker_ec04d45641b4732c10266122a1cdf24e.bindPopup(popup_2a6168cfc54b9e48621599b27402f9e5)
+        ;
+
+        
+    
+    
+            var marker_73220d44262035e567fdbbc6a70b3cd5 = L.marker(
+                [10.796499999999972, -74.7583099999994],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_5c4cd3098ef3aeea91cfb97e025be935 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6968d76721922649a1ffd05abe013c16 = $(`<div id="html_6968d76721922649a1ffd05abe013c16" style="width: 100.0%; height: 100.0%;">Take the 2nd exit from roundabout onto 25 toward Barranquilla. Go for 2.2 mi.</div>`)[0];
+            popup_5c4cd3098ef3aeea91cfb97e025be935.setContent(html_6968d76721922649a1ffd05abe013c16);
+        
+
+        marker_73220d44262035e567fdbbc6a70b3cd5.bindPopup(popup_5c4cd3098ef3aeea91cfb97e025be935)
+        ;
+
+        
+    
+    
+            var marker_49154d3ae3d33738e82470c884576947 = L.marker(
+                [10.82553999999997, -74.76816999999946],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_14ba1c18dbd0d378048978e1c1bcd45b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a8d0358e1ed88adb7b5be3791242574 = $(`<div id="html_2a8d0358e1ed88adb7b5be3791242574" style="width: 100.0%; height: 100.0%;">Take ramp toward Galapa/Caracolí. Go for 0.4 mi.</div>`)[0];
+            popup_14ba1c18dbd0d378048978e1c1bcd45b.setContent(html_2a8d0358e1ed88adb7b5be3791242574);
+        
+
+        marker_49154d3ae3d33738e82470c884576947.bindPopup(popup_14ba1c18dbd0d378048978e1c1bcd45b)
+        ;
+
+        
+    
+    
+            var marker_bd75646f9fe5514c4ac444f4edc1acf7 = L.marker(
+                [10.828479999999972, -74.77086999999945],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_4edd472312ada26bc0d3bc17372a3cea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea779fb967722f824a749199e9d748c4 = $(`<div id="html_ea779fb967722f824a749199e9d748c4" style="width: 100.0%; height: 100.0%;">Continue on 25AT (25). Go for 10.5 mi.</div>`)[0];
+            popup_4edd472312ada26bc0d3bc17372a3cea.setContent(html_ea779fb967722f824a749199e9d748c4);
+        
+
+        marker_bd75646f9fe5514c4ac444f4edc1acf7.bindPopup(popup_4edd472312ada26bc0d3bc17372a3cea)
+        ;
+
+        
+    
+    
+            var marker_2f1bde85feaef2ebd6627a736ba11c23 = L.marker(
+                [10.917379999999973, -74.87481999999942],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_fd2920be0055c6938c9969231750c439 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ebd6b4cb040f8854328a415fb55c8b9 = $(`<div id="html_6ebd6b4cb040f8854328a415fb55c8b9" style="width: 100.0%; height: 100.0%;">Take ramp onto Calle 6 (90) toward Barranquilla. Go for 3.4 mi.</div>`)[0];
+            popup_fd2920be0055c6938c9969231750c439.setContent(html_6ebd6b4cb040f8854328a415fb55c8b9);
+        
+
+        marker_2f1bde85feaef2ebd6627a736ba11c23.bindPopup(popup_fd2920be0055c6938c9969231750c439)
+        ;
+
+        
+    
+    
+            var marker_5c13b0aa2e5b9a065ed42e1b7988e74d = L.marker(
+                [10.943509999999977, -74.83635999999943],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_dd0fc8a98d6e41ba4e0eb38bdcd5decf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ee1c27b5abc3c95030e27a32784fea5 = $(`<div id="html_2ee1c27b5abc3c95030e27a32784fea5" style="width: 100.0%; height: 100.0%;">Turn slightly right onto Carrera 6 toward Barranquilla. Go for 0.3 mi.</div>`)[0];
+            popup_dd0fc8a98d6e41ba4e0eb38bdcd5decf.setContent(html_2ee1c27b5abc3c95030e27a32784fea5);
+        
+
+        marker_5c13b0aa2e5b9a065ed42e1b7988e74d.bindPopup(popup_dd0fc8a98d6e41ba4e0eb38bdcd5decf)
+        ;
+
+        
+    
+    
+            var marker_d3f17a45b974942a1d7b4a0ba4512a48 = L.marker(
+                [10.94319999999998, -74.83241999999944],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_6afc15bba421539aeeef381d7a769c12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6920c05060d495df7d9fe0afdb48d040 = $(`<div id="html_6920c05060d495df7d9fe0afdb48d040" style="width: 100.0%; height: 100.0%;">Take ramp. Go for 0.2 mi.</div>`)[0];
+            popup_6afc15bba421539aeeef381d7a769c12.setContent(html_6920c05060d495df7d9fe0afdb48d040);
+        
+
+        marker_d3f17a45b974942a1d7b4a0ba4512a48.bindPopup(popup_6afc15bba421539aeeef381d7a769c12)
+        ;
+
+        
+    
+    
+            var marker_d80951a416f5b72891924d3f2fa46030 = L.marker(
+                [10.942919999999981, -74.83370999999943],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_47feba91367ec7cdf13441f036ad4e26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b18fe2495ba32485f1572f5659f3abb = $(`<div id="html_7b18fe2495ba32485f1572f5659f3abb" style="width: 100.0%; height: 100.0%;">Turn right onto Avenida Circunvalar. Go for 2.6 mi.</div>`)[0];
+            popup_47feba91367ec7cdf13441f036ad4e26.setContent(html_7b18fe2495ba32485f1572f5659f3abb);
+        
+
+        marker_d80951a416f5b72891924d3f2fa46030.bindPopup(popup_47feba91367ec7cdf13441f036ad4e26)
+        ;
+
+        
+    
+    
+            var marker_3a6759b56cc716e8b44a7ace4fbebc6e = L.marker(
+                [10.980049999999979, -74.83594999999941],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_9de87596005c215d098bd01aa6051889 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6466accb91973569a9263aedd381dd47 = $(`<div id="html_6466accb91973569a9263aedd381dd47" style="width: 100.0%; height: 100.0%;">Turn right onto Carrera 36. Go for 0.3 mi.</div>`)[0];
+            popup_9de87596005c215d098bd01aa6051889.setContent(html_6466accb91973569a9263aedd381dd47);
+        
+
+        marker_3a6759b56cc716e8b44a7ace4fbebc6e.bindPopup(popup_9de87596005c215d098bd01aa6051889)
+        ;
+
+        
+    
+    
+            var marker_bca7a5c77d562c00d57a761bd4f0e8c1 = L.marker(
+                [10.981209999999978, -74.8313699999994],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_9f3265c736910dc17e506dfe61212812 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de114a5fcbf8d85a5c2f78f2923069cd = $(`<div id="html_de114a5fcbf8d85a5c2f78f2923069cd" style="width: 100.0%; height: 100.0%;">Turn left onto Calle 85. Go for 243 ft.</div>`)[0];
+            popup_9f3265c736910dc17e506dfe61212812.setContent(html_de114a5fcbf8d85a5c2f78f2923069cd);
+        
+
+        marker_bca7a5c77d562c00d57a761bd4f0e8c1.bindPopup(popup_9f3265c736910dc17e506dfe61212812)
+        ;
+
+        
+    
+    
+            var marker_f17229c10d3b36e664a031d161621fd9 = L.marker(
+                [10.981869999999978, -74.83125999999939],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_6e906d022c668e31a82a9cbff137e7cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_636ec985b0584232eced3be31d2b1ebc = $(`<div id="html_636ec985b0584232eced3be31d2b1ebc" style="width: 100.0%; height: 100.0%;">Turn slightly right onto Carrera 36B. Go for 0.1 mi.</div>`)[0];
+            popup_6e906d022c668e31a82a9cbff137e7cd.setContent(html_636ec985b0584232eced3be31d2b1ebc);
+        
+
+        marker_f17229c10d3b36e664a031d161621fd9.bindPopup(popup_6e906d022c668e31a82a9cbff137e7cd)
+        ;
+
+        
+    
+    
+            var marker_e9fd0a60f0ee1bfb1437127dcedab1af = L.marker(
+                [10.982979999999976, -74.83028999999938],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_66380dc9d6f39c21c2cef5583009e433 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b90ecf6cdf011bc3205418a7f8485da5 = $(`<div id="html_b90ecf6cdf011bc3205418a7f8485da5" style="width: 100.0%; height: 100.0%;">Turn right onto Carrera 36B. Go for 30 ft.</div>`)[0];
+            popup_66380dc9d6f39c21c2cef5583009e433.setContent(html_b90ecf6cdf011bc3205418a7f8485da5);
+        
+
+        marker_e9fd0a60f0ee1bfb1437127dcedab1af.bindPopup(popup_66380dc9d6f39c21c2cef5583009e433)
+        ;
+
+        
+    
+    
+            var marker_08bae21a054690cfb86836bd242f6506 = L.marker(
+                [10.982899999999976, -74.83026999999937],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_d3182e98aa576e2d10982f477449bffd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eba3d6a23655d12e924479fa268671c2 = $(`<div id="html_eba3d6a23655d12e924479fa268671c2" style="width: 100.0%; height: 100.0%;">Continue on Calle 84A. Go for 85 ft.</div>`)[0];
+            popup_d3182e98aa576e2d10982f477449bffd.setContent(html_eba3d6a23655d12e924479fa268671c2);
+        
+
+        marker_08bae21a054690cfb86836bd242f6506.bindPopup(popup_d3182e98aa576e2d10982f477449bffd)
+        ;
+
+        
+    
+    
+            var marker_5e351d66a06da8830e5c529d7a5270c8 = L.marker(
+                [10.982678999999976, -74.83019299999937],
+                {}
+            ).addTo(map_66573ac3605483a3fd24850c1d660710);
+        
+    
+        var popup_c28662c141204e05b9d8d03cb7837c8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a08ea58aaaa6b0fbcfe7247c3f976c79 = $(`<div id="html_a08ea58aaaa6b0fbcfe7247c3f976c79" style="width: 100.0%; height: 100.0%;">Arrive at Calle 84A.</div>`)[0];
+            popup_c28662c141204e05b9d8d03cb7837c8c.setContent(html_a08ea58aaaa6b0fbcfe7247c3f976c79);
+        
+
+        marker_5e351d66a06da8830e5c529d7a5270c8.bindPopup(popup_c28662c141204e05b9d8d03cb7837c8c)
+        ;
+
+        
+    
+</script>
