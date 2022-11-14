@@ -74,7 +74,7 @@ class Map(API):
 
         
         pass
-    
+
     def draw_lines(self, api):
         lista = []
 
