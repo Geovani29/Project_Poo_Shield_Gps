@@ -31,7 +31,8 @@ class API(Direction):
         else:
             self.check = 1
  
-
+#Clase que nos entrega la ruta que se debe tomar de un punto a otro por medio de indicaciones,
+#el tiempo que vamos a demorar y los kilometros de distancia que hay.
 class Ruta(API, Direction):
     def __init__(self):
         pass     
