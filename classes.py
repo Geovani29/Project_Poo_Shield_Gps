@@ -58,7 +58,7 @@ class Ruta(API, Direction):
 class Map(API):
     def __init__(self, api) -> None:
         self.m = folium.Map(location=[api.json_data["route"]["legs"][0]["maneuvers"][0]["startPoint"]["lat"],api.json_data["route"]["legs"][0]["maneuvers"][0]["startPoint"]["lng"]], zoom_start= 13)
-        self.m.save(r"Project_Poo_Shield_Gps\try.html")
+        
         pass
 
     def draw_core_points(self, api):
@@ -74,6 +74,22 @@ class Map(API):
         for row in lista:
             folium.Marker([row[2], row[1]], popup=row[0]).add_to(self.m)
 
-        self.m.save(r"Project_Poo_Shield_Gps\try.html")
-        pass
+       
+    
+    def draw_lines(self, api):
 
+        lista = []
+
+        for each in api.json_data["route"]["legs"][0]["maneuvers"]:
+            lista.append([each["startPoint"]["lat"], each["startPoint"]["lng"]])
+        
+       
+        folium.PolyLine(lista, color="red", weight=2.5, opacity=1).add_to(self.m)
+
+        
+
+    
+    def save_map(self):
+        
+        self.m.save(r"Project_Poo_Shield_Gps\try.html")
+        
