@@ -3,6 +3,7 @@ import urllib
 import folium
 import requests
 
+#Clase que recibe las direcciones
 class Direction():
     def __init__(self, inicio, final):
         self.inicio = inicio
@@ -83,4 +84,4 @@ class Map(API):
 
     def save_map(self):
         
-        self.m.save(r"Project_Poo_Shield_Gps\try.html")
+        self.m.save("Mapita.html")
