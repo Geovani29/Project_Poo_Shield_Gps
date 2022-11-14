@@ -61,7 +61,7 @@ class Map(API):
         pass
 
     def draw_core_points(self, api):
-
+ 
         lista = []
         for each in api.json_data["route"]["legs"][0]["maneuvers"]:
             lista.append([each["narrative"], each["startPoint"]["lng"], each["startPoint"]["lat"]])
