@@ -21,14 +21,13 @@ while True:
 
     pedido.inicio = user.ask_origen()
 
-    if pedido.inicio == 'q':
+    if pedido.inicio == 'Salir':
         break
     
     pedido.final = user.ask_destino()
     
-    if pedido.final == 'q':
+    if pedido.final == 'Salir':
         break    
-    
     
     api.get_url(pedido)
     
@@ -37,17 +36,18 @@ while True:
     
     with open('data.json', 'w') as f:
         json.dump(api.json_data, f)
-
+        
     #el json se guardó en el atributo api.jason_data
     
     api.check_code()
 
-
     ruta.print(pedido, api)
 
-    print("IMPORTANTEEEEEE")
-    print(api.json_data["route"]["legs"][0]["maneuvers"][0]["startPoint"])
-
     map.draw_core_points(api)
+
+    map.draw_lines(api)
+
+    map.save_map()
+    
     break
     
