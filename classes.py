@@ -3,11 +3,14 @@ import urllib
 import folium
 import requests
 
+
 #Clase que recibe las direcciones
 class Direction():
     def __init__(self, inicio: str, final: str)-> None:
         self.inicio = inicio
         self.final = final
+
+
 
 #Clase que contiene toda la información de la API de navegación usada
 class API(Direction):
@@ -35,6 +38,8 @@ class API(Direction):
         else:
             self.check = 1
  
+
+
 #Clase que nos entrega la ruta que se debe tomar de un punto a otro por medio de indicaciones,
 #el tiempo que vamos a demorar y los kilometros de distancia que hay.
 class Ruta(API, Direction):
@@ -65,9 +70,9 @@ class Map(API):
     #generamos el objeto mapa, se empieza en la locación de inicio del viaje
     def __init__(self, api:object) -> None:
         self.m = folium.Map(location=[api.json_data["route"]["legs"][0]["maneuvers"][0]["startPoint"]["lat"],api.json_data["route"]["legs"][0]["maneuvers"][0]["startPoint"]["lng"]], zoom_start= 13)
-        
-        pass
+
     
+
     #se dibujan los puntos en los que se realiza cada giro
     def draw_core_points(self, api:object) -> None:
  
@@ -78,23 +83,18 @@ class Map(API):
 
         for row in lista:
             folium.Marker([row[2], row[1]], popup=row[0]).add_to(self.m)
-<<<<<<< HEAD
+
+
     
     #se dibujan las lineas de viaje entre cada uno de los giros
     def draw_lines(self, api:object) -> None:
-=======
-
-        
-        pass
-
-    def draw_lines(self, api):
->>>>>>> 191244b09ba7362281c36602c400b1d2bf91feaa
         lista = []
 
         for each in api.json_data["route"]["legs"][0]["maneuvers"]:
             lista.append([each["startPoint"]["lat"], each["startPoint"]["lng"]])
             
         folium.PolyLine(lista, color="red", weight=2.5, opacity=1).add_to(self.m)
+
 
     #se genera un archivo ".html" y se guarda en carpeta
     def save_map(self)-> None:
