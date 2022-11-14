@@ -78,17 +78,9 @@ class Map(API):
 
         for row in lista:
             folium.Marker([row[2], row[1]], popup=row[0]).add_to(self.m)
-<<<<<<< HEAD
     
     #se dibujan las lineas de viaje entre cada uno de los giros
     def draw_lines(self, api:object) -> None:
-=======
-
-        
-        pass
-
-    def draw_lines(self, api):
->>>>>>> 191244b09ba7362281c36602c400b1d2bf91feaa
         lista = []
 
         for each in api.json_data["route"]["legs"][0]["maneuvers"]:
