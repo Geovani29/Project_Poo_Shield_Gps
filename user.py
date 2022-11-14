@@ -1,3 +1,5 @@
+#clase usuario, le da la bienvenida y pregunta información de este
+
 class User:
 
     def __init__(self):
