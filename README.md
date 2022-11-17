@@ -6,3 +6,5 @@ Para la simple importación de la libreria utilizamos el siguiente comando:
 ```  
 pip install folium
 ```
+
+Informe del proyecto SHIELD_GPS: https://uninorte-my.sharepoint.com/:w:/g/personal/pgeovani_uninorte_edu_co/EfJJUBL4PrxMl-AdQ0jAQP0BIL3-Nql0gHwYmwE907JQdA?e=8zRyXV
