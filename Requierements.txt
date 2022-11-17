@@ -1,3 +1,3 @@
 python==3.9.12
 
-folium
+Instalar folium por medio del comando "pip install folium" en consola
