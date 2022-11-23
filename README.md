@@ -9,3 +9,7 @@ Informe del proyecto SHIELD_GPS: https://uninorte-my.sharepoint.com/:w:/g/person
 ## UML del proyecto:
 
 ![alt text](https://github.com/Geovani29/Project_Poo_Shield_Gps/blob/main/UML_shieldGPS.png)
+
+
+## Logo del proyecto:
+![alt text](https://github.com/Geovani29/Project_Poo_Shield_Gps/blob/main/SHIELD%20GPS.png)
