@@ -4,3 +4,8 @@ El proyecto genera una ruta con indicacinoes especificas para llegar de un punto
 
 
 Informe del proyecto SHIELD_GPS: https://uninorte-my.sharepoint.com/:w:/g/personal/pgeovani_uninorte_edu_co/EfJJUBL4PrxMl-AdQ0jAQP0BIL3-Nql0gHwYmwE907JQdA?e=8zRyXV
+
+
+## UML del proyecto:
+
+![alt text](https://github.com/Geovani29/Project_Poo_Shield_Gps/blob/main/UML_shieldGPS.png)
